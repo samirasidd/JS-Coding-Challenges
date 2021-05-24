@@ -15,7 +15,7 @@ brake(){
 }
 
 get speedUS() {
-    return `${this.speed / 1.6}mi/h`;
+    return this.speed / 1.6;
 }
 set speedUS(speed) {
    this.speed = speed * 1.6;
@@ -28,7 +28,6 @@ const ford = new CarCl('Ford', 120);
 ford.accelerate();
 ford.brake();
 console.log(ford);
-console.log(ford.speedUS);
-
-
+ford.speedUS = 100;
+console.log(ford);
 
