@@ -11,7 +11,7 @@ console.log(`${this.speed += 10}km/h`);
 }
 
 brake(){
-    console.log(`${(this.speed) +- 5}km/h`);
+    console.log(`${(this.speed) -= 5}km/h`);
 }
 
 get speedUS() {
